@@ -23,7 +23,7 @@ class About extends React.Component {
                             <br />
                             <br />
                             <div className="header">
-                                <span>Who?</span>
+                                <span>Hi</span>
                             </div>
                             <div className="meta">
                                 <span>

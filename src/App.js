@@ -13,7 +13,7 @@ export default class App extends React.Component {
         super();
         this.cookies = new Cookies();
         this.state = {
-            access_token: this.cookies.get("SearchMe")
+            access_token: "4Eofuo4lpTbqza5riV8jDhwlo0usLQhy2q7NBlUj"
         }
         this.params = new URLSearchParams(window.location.search);
     }

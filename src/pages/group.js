@@ -82,6 +82,7 @@ export default class Group extends React.Component {
             messages: fetchedMessages.messages,
             unpagedLength: fetchedMessages.unpagedLength
         });
+        
     }
 
     render() {

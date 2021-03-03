@@ -88,7 +88,7 @@ const GroupMeService = {
             axios.get(`${url}/groups/${group_id}/messages?token=${access_token}&limit=100&before_id=${before_id}`).then((response) => {
                 messages = messages.concat(response.data.response.messages);
                 loaded(messages.length);
-                if(messages.length === total_messages) {
+                if(messages.length >= total_messages) {
                     return cb(messages);
                 } else {
                     fetchBatch(messages[messages.length - 1].id);
